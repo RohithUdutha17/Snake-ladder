@@ -1,0 +1,177 @@
+/* .hello{
+    width: 600px;
+    height: 600px;
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+.row{
+    border: 2px solid black;
+}
+.data{
+    border: 2px solid black;
+    padding: 5px;
+} */
+#winner{
+    text-transform: capitalize;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#res{
+    text-transform: capitalize;
+    font-size: 35px;
+}
+@keyframes spindice
+{
+  0%{
+    transform: rotate(0deg);
+    filter: blur(5px) }
+  100%
+  {
+    transform: rotate(360deg);
+    filter: blur(5px) }
+}
+
+#dialog{
+    /* width: 200px;
+    height: 100px; */
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5%;
+    align-items: center;
+}
+#box{
+    width: 50px;
+    height: 50px;
+    background-color: lightgreen;
+}
+#box1{
+    width: 50px;
+    height: 50px;
+    background-color: #ff6347;
+}
+table
+{
+    border: 2px solid black;
+    width: 500px;
+    height: 500px;
+    border-collapse: collapse;
+    text-align: center;
+    margin: auto;  
+}
+td{
+    border: 1px solid black;
+    padding: 1%;
+    font-weight: bold;
+}
+#hello{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+    text-align: center;
+    
+}
+#inc{
+    flex-grow: 1;
+    border-right: 2px solid black;
+    margin: auto;
+    padding: 20px;
+}
+.hel{
+    display: flex;
+    justify-content:space-around ;
+    align-items: center;
+}
+.hel1{
+    display: flex;
+    justify-content:space-around ;
+    align-items: center;
+}
+h3{
+    font-size: 25px;
+}
+form{
+    width: 50%;
+    margin: auto;
+    
+    text-align: center;
+}
+button{
+    padding: .8%;
+    font-size: large;
+    margin: 10px;
+}
+/* #tab{
+    width: 50%;
+    margin: auto;
+} */
+#ladders{
+    color: green;
+}
+#snakes{
+    color: red;
+}
+
+.radio-toolbar input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+  }
+
+  .radio-toolbar label {
+    display:inline-block;
+    background-color: #ddd;
+    padding: 10px 20px;
+    font-family: sans-serif, Arial;
+    font-size: 16px;
+    border: 2px solid #444;
+    border-radius: 4px;
+    margin:0px 0px 0px 20px;
+}
+
+.radio-toolbar input[type="radio"]:checked + label {
+    background-color:#bfb;
+    border-color: #4c4;
+}
+.radio-toolbar{
+     display: flex;  
+     justify-content: center;
+     align-items: center;
+     margin: 20px;
+}
+input{
+    margin: 20px;
+}
+ #ps{
+    height: 100%;
+} 
+#snake{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 10px;
+    color: red;
+}
+#ladder{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 10px;
+    color: green;
+}
+#heading{
+    display: flex;
+    justify-content: center;
+}
+#and{
+    font-size: 50px;
+    margin: 10px;
+    font-weight: bold;
+}
+#body{
+    background: #c31432;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}

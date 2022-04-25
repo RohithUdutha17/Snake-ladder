@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body id="body1">
+        <marquee id="winner" direction="right" scrollamount="15"></marquee>
+        <audio id="audio" src="./roll.mp3"></audio>
+        <dialog id="dialog"></dialog>
+        <div id="hello">
+            <div id="inc">
+                <table id="tab">
+                </table>
+                <br>
+                <img id="rand" style="display:block;margin: auto;width: 5%;"><br>
+                <button type="button" id="dice" onclick="random()">Roll dice</button>
+                <button type="button" onclick="start()">Start new game</button>
+                <h2 id="player">1st player turn</h2>
+            </div>
+            <div style="width:50%;margin:auto;text-align:center">
+                <div class="hel1">
+                    <div id="box"></div>   
+                    <h3>Ladders</h3>
+                </div>
+                <div class="hel1">
+                    <div id="box1"></div>   
+                    <h3>Snakes</h3>
+                </div>
+                <div class="hel">
+                    <div>
+                        <h2><u>LADDERS</u></h2>
+                        <h3 id="ladders"> </h3>
+                    </div>
+                    <div>
+                        <h2><u>SNAKES</u></h2>
+                        <h3 id="snakes"></h3>
+                    </div>
+                </div>
+                <h2>Status</h2>
+                 <h1 id="res">Game not started yet</h1>
+            </div>
+        </div>
+    <script src="sample.js"></script>
+</body>
+</html>

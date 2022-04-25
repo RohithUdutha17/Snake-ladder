@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body id="body">
+    <div id="heading">
+        <p id="snake">SNAKE</p>
+        <p id="and">&</p>
+        <p id="ladder">LADDER</p>
+    </div>
+    <form id="ps">
+        <div class="radio-toolbar">
+            <div id="box" style="background-color:blue"></div>   
+            <input type="radio" id="human1" name="player1" value="Human1" checked>
+            <label for="human1">Human</label>
+            <input type="radio" id="none1" name="player1" value="None1">
+            <label for="none1">None</label> 
+        </div>
+        <div class="radio-toolbar">
+            <div id="box" style="background-color:yellow"></div>   
+            <input type="radio" id="human2" name="player2" value="Human2" checked>
+            <label for="human2">Human</label>
+            <input type="radio" id="none2" name="player2" value="None2">
+            <label for="none2">None</label> 
+        </div>
+        <div class="radio-toolbar">
+            <div id="box" style="background-color:magenta"></div>   
+            <input type="radio" id="human3" name="player3" value="Human3" checked>
+            <label for="human3">Human</label>
+            <input type="radio" id="none3" name="player3" value="None3">
+            <label for="none3">None</label> 
+        </div>
+        <div class="radio-toolbar">
+            <div id="box" style="background-color:orange"></div>   
+            <input type="radio" id="human4" name="player4" value="Human4" checked>
+            <label for="human4">Human</label>
+            <input type="radio" id="none4" name="player4" value="None4">
+            <label for="none4">None</label> 
+        </div>
+        <button type="button" onclick="startgame()">Start Game</button>
+    </form>
+</body>
+<script>
+    function startgame(){
+        ocolors = ["blue","yellow","magenta","orange"];
+        dupcolors=[]
+        for(let i=0;i<4;i++){
+            if(document.getElementById(`human${i+1}`).checked == true){
+                dupcolors.push(ocolors[i]);
+            }
+        }
+        if(dupcolors.length<2){
+            alert("Atleast two players have to play");
+        }
+        else{
+            localStorage.setItem("colors", JSON.stringify(dupcolors));
+            window.location = "./snake&ladder.html";
+        }
+    }
+</script>
+</html>
